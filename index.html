@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 3rem 0 1rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <section class="newsletter_component">
+
+      <header class="newsletter_hero"></header>
+      <div class="newsletter_container">
+        <h1 class="newsletter_title">Stay updated!</h1>
+        
+        <p class="newsletter_subtitle">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        
+        <div class="newsletter_offers">
+          <div class="newsletter_offer">
+            <span>
+              <img src="./assets/images/icon-list.svg" class="newsletter_offer_icon"> </img>
+            </span>
+            
+            <span class="newsletter_offer_detail">
+              Product discovery and building what matters
+            </span>
+          </div>
+          <div class="newsletter_offer">
+            <span>
+              <img src="./assets/images/icon-list.svg" class="newsletter_offer_icon"> </img>
+            </span>
+            
+            <span class="newsletter_offer_detail">
+              Measuring to ensure updates are a success
+            </span>
+          </div>
+        
+          <div class="newsletter_offer">
+            <span>
+              <img src="./assets/images/icon-list.svg" class="newsletter_offer_icon"> </img>
+            </span>
+            <span class="newsletter_offer_detail">And much more!</span>
+          </div>
+          <div class="newsletter_form_container">
+            <form class="newsletter_form">
+              <div class="email_label_and_error_message">
+                <label for="email" name="email" class="email_label ">
+                  Email address
+                </label>
+                <span class="email_error_message"></span>
+              </div>
+              <input type="email" placeholder="email@company.com" class="email_input" onkeyup="emailValidation()" />
+              <input type="submit" value="Subscribe to monthly newsletter" class="subscribe_button" />
+            </form>
+          </div>
+      </div>
+      </div>
+
+    </section>
+    
+    <!-- Sign-up form end -->
+    
+    <!-- Success message start -->
+    <div class="subscription_successful_container hide">
+      <img src="./assets/images/icon-success.svg" class="subscription_successful_icon" alt="">
+      <h1 class="subscription_successful_title">Thanks for subscribing!</h1>
+      <p class="subscription_successful_message">
+        A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open
+        it and click the button inside to confirm your subscription. 
+      </p>
+      <button class="dismiss_message_button">
+        Dismiss
+        message
+      </button>
+    </div>
+    
+    <!-- Success message end -->
+    
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/kangwa-ntema">kangwa ntema</a>.
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+  </html>
+  
